@@ -1,0 +1,1 @@
+const loopTests = require('./test/test');

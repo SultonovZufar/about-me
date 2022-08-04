@@ -1,7 +1,7 @@
-let path = require('path');
+const path = require('path');
+const parse = require('../parse/parse')
 
 module.exports = (f_name) => {
     let normalizedPath = path.normalize(f_name);
-    let isAbs = path.isAbsolute(normalizedPath);
-    return (isAbs) ? normalizedPath : new Error("THIS ISN'T THE RIGHT WAY!!!");
+    return parse(normalizedPath);
 }

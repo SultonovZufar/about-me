@@ -5,7 +5,7 @@ module.exports = (argv) => {
         if (argv.match(ptrn)) {
             return parseInt(argv)
         } else {
-            throw  new Error("Son kiritilsin!!!")
+            throw  new Error("PLEASE, ENTER A NUMBER!!!")
         }
     } catch (error) {
         console.log(error);

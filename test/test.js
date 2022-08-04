@@ -1,7 +1,9 @@
 let n = 10000000;
 let arr = new Array(n);
 
-module.exports = [
+let PATH = __filename;
+
+module.exports.loops = [
     {
         name: "For",
         loop: () => {
@@ -43,3 +45,5 @@ module.exports = [
         }
     }
 ];
+
+module.exports.loopsPath = PATH;

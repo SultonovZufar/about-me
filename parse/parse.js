@@ -1,10 +1,5 @@
+const { loopsPath } = require('../test/test');
 
-
-
-if (existsSync(x))
-    console.log('the path exists...');
-else
-console.log('no exists...');
-
-
-module.exports =(a) => {}
+module.exports = (normalized_Filename) => {
+    console.log(loopsPath.includes(normalized_Filename));
+}

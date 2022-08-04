@@ -1,4 +1,4 @@
-const loopTests = require('./test/test');
+const { loops } = require('./test/test');
 
 function getTime(startedTime) {
     return Date.now() - startedTime;

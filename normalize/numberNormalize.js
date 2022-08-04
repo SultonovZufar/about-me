@@ -1,8 +1,13 @@
+let ptrn = /^\d+$/;
 
-
-
-module.exports = (xbox =>  {
-    let norm = path.normalized(p);
-    let abs = path.isAbsolute(norm);
-    return(abs) ? norm : new Error ('this route incorrect')
-})
+module.exports = (argv) => {
+    try {
+        if (argv.match(ptrn)) {
+            return parseInt(argv)
+        } else {
+            throw  new Error("Son kiritilsin!!!")
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}

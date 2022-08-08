@@ -1,12 +1,3 @@
-const { loops } = require('./test/test');
+const pathNormalize = require('./normalize/pathNormalize');
+const numberNormalize = require('./normalize/numberNormalize');
 
-function getTime(startedTime) {
-    return Date.now() - startedTime;
-}
-
-try {
-    let startedTime = Date.now();
-    
-} catch (error) {
-    console.error(error);
-}

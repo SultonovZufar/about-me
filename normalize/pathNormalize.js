@@ -1,7 +1,7 @@
 const path = require('path');
-const parse = require('../parse/parse')
+const parsejs = require('../parse/parse')
 
-module.exports = (f_name) => {
-    let normalizedPath = path.normalize(f_name);
-    return parse(normalizedPath);
+module.exports = (fileName) => {
+    let normalizedPath = path.normalize(fileName);
+    return parsejs(normalizedPath);
 }

@@ -1,9 +1,9 @@
 const { loopsPath } = require('../test/test');
-const pNormalize = require('../normalize/pathNormalize');
+const path = require('path');
 
-module.exports = (pNormalize) => {
+module.exports = (fileway) => {
     try {
-        loopsPath.includes(pNormalize);
+        loopsPath.includes(fileway);
         let isAbs = path.isAbsolute(normalizedPath);
         return (isAbs) ? normalizedPath : new Error("THIS ISN'T THE RIGHT WAY!!!");
     } catch (error) {

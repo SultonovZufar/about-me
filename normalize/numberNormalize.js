@@ -1,11 +1,11 @@
 let ptrn = /^\d+$/;
 
-module.exports = (argv) => {
+module.exports = (number) => {
     try {
-        if (argv.match(ptrn)) {
-            return parseInt(argv)
+        if (number.match(ptrn)) {
+            return parseInt(number);
         } else {
-            throw  new Error("PLEASE, ENTER A NUMBER!!!")
+            throw  new Error("PLEASE, ENTER A NUMBER!!!");
         }
     } catch (error) {
         console.log(error);
